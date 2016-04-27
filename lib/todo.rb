@@ -10,6 +10,8 @@ class TodoItem
     @description = description
     @due = options[:due] ? Date.parse(options[:due]) : options[:due]
     @priority = options[:priority]
+    
+    @type = "todo"
   end
   
   def details
@@ -19,9 +21,13 @@ class TodoItem
   end
   
   def valid_priority?( priority )
+    return true if priority == nil
+    
     return true if priority == "high"
-    return true if priority == "midium"
+    return true if priority == "medium"
     return true if priority == "low"
+    
+    puts priority
     
     return false
   end

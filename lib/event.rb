@@ -6,6 +6,8 @@ class EventItem
     @description = description
     @start_date = Date.parse(options[:start_date]) if options[:start_date]
     @end_date = Date.parse(options[:end_date]) if options[:end_date]
+    
+    @type = "event"
   end
   
   

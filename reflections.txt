@@ -2,12 +2,23 @@
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) udacilist::empty?() method
+  b) udacilist::filter() method
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+   3.5 hours
+
 2. What was the most rewarding challenge you conquered?
+   how to attract interface   
+
 3. What two additional features did you build? Why?
+  a) udacilist::empty?() method. It could be used
+  b) udacilist::filter() method. It is recommended method to be implied
+   
 4. Where do you still have room to grow?
+   the way to abstract.
+   the way of thinking of ruby is not the same as C++, now I am feel not good to work with it.I think I should study more of ruby.
+   It seems does not have abstract interface, override.So how to abstract as C++, or is it a good way to think like c++.
+   e.g.: @description in todoItem,eventItem, linkItem. Should I extract @description into a base class/interface ?

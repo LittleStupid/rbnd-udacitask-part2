@@ -2,7 +2,7 @@ class UdaciList
   attr_reader :title, :items
 
   def initialize(options={})
-    @title = options[:title]
+    @title = options[:title] || "Untitled List"
     @items = []
   end
   
@@ -39,11 +39,25 @@ class UdaciList
   end
   
   def all
+    puts @title
     puts "-" * @title.length
     puts @title
     puts "-" * @title.length
     @items.each_with_index do |item, position|
       puts "#{position + 1}) #{item.details}"
     end
+  end
+  
+  def empty?
+    @title.length == 0
+  end
+  
+  def filter( type )
+    collection = items.select{ |item| item.type == type }
+    if( collection.length == 0 )
+      puts "filter nothing"
+    end
+    
+    collection.each{ |item| puts item.type + " : " + item.description }
   end
 end

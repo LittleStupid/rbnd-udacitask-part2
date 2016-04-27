@@ -26,5 +26,7 @@ module Listable
     value = "" if !priority
     return value
   end
+  
+  attr_accessor :type
 
 end
