@@ -52,6 +52,10 @@ class UdaciList
     @title.length == 0
   end
   
+  def num
+    all.length
+  end
+  
   def filter( type )
     collection = items.select{ |item| item.type == type }
     if( collection.length == 0 )

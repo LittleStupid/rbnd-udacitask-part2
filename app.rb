@@ -46,3 +46,7 @@ new_list.all
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
 new_list.filter("event")
+
+# NEW FEATURES TEST
+puts "new_list is empty : " + new_list.empty?.to_s
+puts "new_list items num : " + new_list.num.to_s

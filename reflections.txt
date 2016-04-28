@@ -3,7 +3,7 @@
 1. What is the gem of your choice and how did you use it?
 2. Describe the 2 features you added to the project.
   a) udacilist::empty?() method
-  b) udacilist::filter() method
+  b) udacilist::num() method
 
 # REFLECTIONS
 # -------------------------------------------------------
@@ -15,7 +15,7 @@
 
 3. What two additional features did you build? Why?
   a) udacilist::empty?() method. It could be used
-  b) udacilist::filter() method. It is recommended method to be implied
+  b) udacilist::num() method. Return the number of items in the list.
    
 4. Where do you still have room to grow?
    the way to abstract.
