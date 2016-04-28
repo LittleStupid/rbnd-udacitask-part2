@@ -1,6 +1,8 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+   gem artii is used to print title
+
 2. Describe the 2 features you added to the project.
   a) udacilist::empty?() method
   b) udacilist::num() method

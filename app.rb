@@ -1,5 +1,6 @@
 require 'chronic'
 require 'colorize'
+require 'artii'
 # Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
@@ -8,6 +9,10 @@ require_relative "lib/udacilist"
 require_relative "lib/todo"
 require_relative "lib/event"
 require_relative "lib/link"
+
+#new gem used here
+a = Artii::Base.new :font => 'slant'
+puts a.asciify('TASK')
 
 list = UdaciList.new(title: "Julia's Stuff")
 list.add("todo", "Buy more cat food", due: "2016-02-03", priority: "low")
