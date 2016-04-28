@@ -8,13 +8,16 @@ class TodoItem
     end
     
     @description = description
-    @due = options[:due] ? Date.parse(options[:due]) : options[:due]
+    
+    
+    @due = options[:due] ? Date.parse((Chronic.parse(options[:due])).to_s[0,10]) : options[:due]
     @priority = options[:priority]
     
     @type = "todo"
   end
   
   def details
+    "(" + @type + ")" +
     format_description( @description ) + "due: " +
     format_date_one( @due ) +
     format_priority( @priority )

@@ -24,8 +24,8 @@ list.all
 # --------------------------------------------------
 new_list = UdaciList.new # Should create a list called "Untitled List"
 
-new_list.add("todo", "Buy more dog food", due: (Chronic.parse("in 5 weeks")).to_s[0,10], priority: "medium")
-new_list.add("todo", "Go dancing", due: (Chronic.parse("in 2 hours")).to_s[0,10])
+new_list.add("todo", "Buy more dog food", due: "in 5 weeks", priority: "medium")
+new_list.add("todo", "Go dancing", due: "in 2 hours")
 new_list.add("todo", "Buy groceries", priority: "high")
 new_list.add("event", "Birthday Party", start_date: "May 31")
 new_list.add("event", "Vacation", start_date: "Dec 20", end_date: "Dec 30")
